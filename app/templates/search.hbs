@@ -1,0 +1,5 @@
+{{input type="text" value=firstName disabled=entryNotAllowed size="40"}}
+<h3><button {{action "toggleBody"}}>BUSCAR</button></h3>
+{{#if isShowingBody}}
+    <p>{{{body}}}</p>
+{{/if}}
