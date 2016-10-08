@@ -1,6 +1,9 @@
 <p>
     En esta página encontrarás la lista de los restaurantes registrados
 </p>
+{{#each model as |restaurant|}}
+  {{restaurant-listing restaurant=restaurant}}
+{{/each}}
 
 
 {{outlet}}
