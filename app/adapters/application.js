@@ -1,6 +1,6 @@
 import DS from 'ember-data';
 
-export default DS.JSONAPIAdapter.extend({
-  host: 'https://restaurant-node.herokuapp.com/api/restaurants',
-  //namespace: 'api'
+export default DS.RESTAdapter.extend({
+  namespace: 'api',
+  host: 'https://restaurant-node.herokuapp.com'
 });
